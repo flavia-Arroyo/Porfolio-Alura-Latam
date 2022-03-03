@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href ="style.css">
+        <script src="visualizacion.js"></script>
+
+        <title>MI PORFOLIO</title>
+    </head>
+    <body>
+        <div class="header">
+            <header>
+                <div class="header-superior">                
+                    <div class="logo">
+                       <h3>
+                        <img  src="imagenes/foto-perfil.jpg" alt = "foto">
+                        Arroyo Flavia</h3>
+                    </div>
+                </div>
+                <div class="container-menu">
+                    <div class="menu">
+                        <input type="checkbox" id="check-menu">
+                        <label id="label-check"for="check-menu"><i class="fa-solid fa-bars icon-menu"></i></label>
+                        <nav>
+                            <ul>
+                                <li><a href="#home"><i class="fa-solid fa-house"></i></a></li>
+                                <li><a href ="#sobremi">Sobre Mi</a></li>
+                                <li><a href ="#skills">Skills</a></li>
+                                <li><a href ="#hobbies">Hobbies</a></li>
+                                <li><a href ="#formacion">Formación</a></li>
+                                <li><a href ="#proyectos">Proyectos</a></li>
+                                <li><a href ="#contacto">Contacto</a></li>     
+                                
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+                    
+                
+            </header>
+
+        </div>
+        
+        <a name="home"></a>
+        <main>
+            
+            <section class="sobremi">
+                <div class="portada">
+                    
+                    <img class= "fotoperfil" src="imagenes/foto-perfil.jpg">
+                    <p ><em>Soy <strong>Arroyo Flavia Elizabeth </strong>de nacionalidad Argentina, vivo en Córdoba Cápital, tengo 40 años, soy Contadora Publica y Magister en Recursos Humanos. En la actualidad estoy formadome en el desarrollo de paginas web, participando del proyecto Oracle ONE en Alura Latam y Argentina Programa</em></p>
+                    <div class="redes">
+                        <a href="http://wa.me/+5493516745305"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href=" https://www.linkedin.com/in/flavia-arroyo-b5306016b"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href = "mailto:flavia.e.arroyo@gmail.com?"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://github.com/flavia-Arroyo"><i class="fa-brands fa-github"></i></a>
+                        <a href="Curriculum/Curriculum Arroyo FLavia.pdf"><i class="fa-solid fa-file-pdf"></i></a>
+                                            
+                    </div>
+
+                </div><a name="sobremi"></a>
+                
+                <div class = "descripcion" >
+                    
+                    <h2>SOBRE MI</h2>
+                    <p>Cuento con 10 años de experiencia en Contabilidad y Recursos Humanos, trabajando en la Universidad Nacional de Córdoba. <br>En la actualidad estoy incursionando en el desarrollo de paginas web y aspiro a ser una excelente profesional aplicando todos mis conocimientos previos para lograr generar valor agregado a mis proyectos. <br>Me gusta trabajar en equipo, fomento el trabajo colaborativo,soy comunicativa,persistente en lograr mis objetivos, atenta al detalle, proactiva, proclive al cambio y a la mejora continua tanto personal como profesionalmente.</p>
+                    <img id="firma" src="imagenes/firma.png">
+                </div>
+            </section> <a name="skills"></a>           
+            
+            <seccion class="skills"><H1>SKILLS</H1>
+                <ul class="capacitacion">
+                    <li>
+                        <h2>HTML5 y CSS 3</h2>
+                        <img src="imagenes/skills/css3yhtml5.png" alt="logo css3yhtml5">
+        
+                        <a href="#certificados"  class="certif"  onclick= "certihtmlcss();">Certificados</a>
+                        
+        
+                    </li>
+                    <li>
+                        <h2> GIT Y GITHUB</h2>
+                        <img src="imagenes/skills/gitgithub.png" alt="logo git github">
+                        <a  href ="#certificados" class ="certif"  onclick= "certigit();">Certificados</a>
+                        
+                    </li>
+                    <li>
+                        <h2>JAVASCRIPT</h2>
+                        <img src="imagenes/skills/javascript.png" alt="logo javascript" id="js">
+                        <a href ="#certificados" class="certif"  onclick= "certifjs();">Certificados</a>
+                        
+                    </li>
+                    <li>
+                        <h2>SOFTSKILLS</h2>
+                        <img src="imagenes/skills/softskills.jpg" alt="logo habilidades">
+                        <a href="#certificados" class="certif"  onclick= "certisoftskills();">Certificados</a>
+                        
+                    </li>
+        
+                </ul>
+                <a name="certificados"/>
+                <section class="certificados">
+                    
+                    <div id="certjs"> 
+                        <img src="certificados/JavaScript/jsintroduccion.png"alt = "introduccionjs">
+                        <img src="certificados/JavaScript/logicaparte1.png" alt="logicaparte1">
+                        <img src="certificados/JavaScript/logicaparte2.png" alt ="logicaparte2">
+                        <img src="certificados/JavaScript/logicaparte3.png" alt="logicaparte3">
+                        <img src="certificados/JavaScript/javascrpt.png" alt="javascript">             
+                    
+                    </div>
+                    
+                    <div id="certhtmlcss">
+                        <img src="certificados/html y css/htmlcssparte1.png"alt="htmlcss1">
+                        <img src="certificados/html y css/htmlcssparte2.png" alt ="htmlcss2">
+                        <img src="certificados/html y css/htmlcssparte3.png"alt ="htmlcss3">
+                    </div>
+                    
+                    <div id="certgitgithab">
+                        <img src="certificados/Git Github/gitgithub.png" alt ="gitygithub">
+                    </div>
+                    
+                    <div id="certhabilidades">
+                        <img src="certificados/habilidades blandas/businessagility.png" alt="businessagility">
+                        <img src="certificados/habilidades blandas/bussinessmodelcanvasparte1.png" alt="bussinesmc1">
+                        <img src="certificados/habilidades blandas/bussinessmodelcanvasparte2.png" alt="bussinessmc2">
+                        <img src="certificados/habilidades blandas/ciclovidaproducto.png"alt ="cicloproducto">
+                        <img src="certificados/habilidades blandas/fundamentosagilidad.png" alt="fundagilidad">
+                        <img src="certificados/habilidades blandas/gestionagilliderando el cambio.png" alt ="liderandocambio">
+                        <img src="certificados/habilidades blandas/habilidadesdeliderazgo.png" alt="habliderazgo">
+                        <img src="certificados/habilidades blandas/leanstartup.png" alt="leandstartup">
+                        <img src="certificados/habilidades blandas/organizaciongruposagiles.png" alt="orggrupos">
+                    </div>   
+                </section>
+            </seccion>
+            <a name="hobbies"></a>
+            <section class="hobbies"><h1>HOBBIES</h1>
+                <ul>
+                    <li>
+                        <h2>Ciclismo</h2>
+                        <img src= "hobbies/ciclismo.jpg" alt="ciclismo">        
+        
+                    </li>
+                    <li>
+                        <h2> Escuchar Musica</h2>
+                        <img src="hobbies/escucharmusica.png" alt ="escuchar musica">
+                        
+                        
+                    </li>
+                    <li>
+                        <h2>Ver Peliculas</h2>
+                        <img src="hobbies/peliculas.jpg" alt="logo javascript" >
+                        
+                    </li>
+                    
+        
+                </ul>
+
+            </section>
+            <a name="formacion"></a>
+            <section class="capacitacion"><H1>FORMACION ACADÉMICA</H1>
+                <ul class="formacademica">
+                    <li>
+                        <h2>Argentina Programa</h2>
+                        
+                        <a href="#diplomas"  onclick="diplomaargpro();"><img src= "formacion/LOGOS/argentinaprograma.jpg" alt="argentinaprograma"></a>
+                        <p>Seprogramar - Egresado: Diciembre 2021</p> 
+                        <p>Yoprogramo-En Curso</p>    
+        
+                    </li>
+                    <li>
+                        <h2> Oracle- Alura Latam </h2>
+                        <a href="#skills" ><img src="formacion/LOGOS/aluralatam.png" alt ="aluralatam"></a>
+                        <p>Programa ONE</p>
+                        <p>Formación en Desarrollo Web- En curso</p>
+                        
+                        
+                    </li>
+                    <li>
+                        <h2>Universidad Europea del Atlantico</h2>
+                        <a href="#diplomas" onclick="diplomarrhh();" ><img src="formacion/LOGOS/uea.jpg" alt="uea" ></a>
+                        <p>Magister en Recursos Humanos,Gestión del Conocimiento</p>
+                        <p>Egresada 2020</p>
+                        
+                    </li>
+                    <li class="unc">
+                        <h2>Universidad Nacional de Córdoba</h2>
+                        <a href ="diplomas" onclick="diplomacont();" ><img src="formacion/LOGOS/unc.png" alt="unc"></a>
+                        <p>Facultad de Ciencias Económicas -Contador Público- Egresado 2013</p>
+                    </li>
+                    
+        
+                </ul>
+                <a name="diplomas" class="dipacad"></a>
+                <section class="diplomas">
+                    
+                    <div id="diplomaap">                   
+                        <img src="formacion/CERTIFICADOS/seprogramar.png">
+                    </div>
+                    <div id="diplomarrhh">                     
+                        <img src="formacion/CERTIFICADOS/titulo magister.jpg">
+                    </div>
+                    <div id="diplomacont">
+                        
+                    </div>
+
+                </section>
+            </section>
+            <a name="proyectos"></a>
+            <section class="proyectos">
+                <h1>Experiencia Profecional</h1>
+                <div class="encriptador">                    
+                    <img src="proyectos/encriptador.png">
+                    <div class="info">
+                        <p>PRIMER CHALLENGE <br>Encriptador de texto</P>
+                        
+                        <a href ="https://flavia-arroyo.github.io/primer-challenge-alura-latam/">Pagina</a> 
+                        <a href ="https://github.com/flavia-Arroyo/primer-challenge-alura-latam">Repositorio</a>
+
+                    </div>                    
+                    
+                </div>
+                <div class="ahorcado">         
+                    <img src="proyectos/ahorcadoinicio.png">
+                    <div class="info">
+                        <p>SEGUNDO CHALLENGE<br>Solo Computadora<br> HTML Y JavaScript</P>
+                        
+                        <a href="https://flavia-arroyo.github.io/Juego-Ahorcado-Alura-Oracle/">Pagina</a>
+                        <a href ="https://github.com/flavia-Arroyo/Juego-Ahorcado-Alura-Oracle">Repositorio</a>
+                    </div>
+                </div>
+            </section>   
+
+            
+            <a name="contacto"></a>
+            <section class="formulario">
+                <img src="imagenes/contacto.png" class="imagenContacto" alt="logodecontacto">
+                <form>
+                    <h2>¿Quieres Contactarme?</h2>
+                    <p><em><strong>Completa el siguiente formulario<br> y a la brevedad me comunicaré </strong> </em> </p>
+                
+
+                    <label for ="nombreyapellido">Nombre y Apellido</label>
+                    <input type="text" id="nombreyapellido" class="input-patron" required>
+
+                    
+                    <label for ="correoelectronico">Correo Electronico</label>
+                    <input type="email" id="correoelectronico" class="input-patron" required placeholder="email@dominio.com">
+
+                    
+                    <label for ="telefono">Télefono</label>
+                    <input type="tel" id="telefono" class="input-patron" required placeholder="(xxx) xxxx xxxx">
+
+                    
+                    <label for ="mensaje">Mensaje</label>
+                    <textarea cols = "30" rows ="10"  id="mensaje" class="input-patron" required></textarea>
+                    
+                    <fieldset>
+                        <legend>¿Cómo le gustaría que lo contacte?</legend>
+                        <label for="radio-email"><input type="radio" name ="contacto" value="email" id="radio-email">Email</label>
+
+                        
+
+                        <label for="radio-teledono"><input type="radio" name ="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                        
+
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="WhatsApp" id="radio-whatsapp" checked>WhatsApp</label> 
+                                    
+        
+                    </fieldset>
+                
+
+                    <input type="submit" value ="Enviar Formulario" class="contacto">
+                
+
+                </form>
+            
+
+            </section>
+
+            
+            
+        
+            
+        </main>
+        <footer>
+            <p>Desarrollado por <strong>Arroyo Flavia Elizabeth</strong> </p>
+            <p>2022</p>
+
+        </footer>  
+        
+        
+    </body>
+</html>

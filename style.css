@@ -1,0 +1,672 @@
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style:none;
+    box-sizing: border-box;
+    
+}
+
+
+
+/*--------header ----*/
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+  
+   
+}
+
+/*__________header superior___*/
+
+.header-superior{
+    max-width: 100%;
+    margin:auto;
+    display:flex;
+    align-items: center;
+    padding:10px;
+    background-color: rgb(62, 216, 230);
+
+
+}
+
+.logo img{
+    width: 30px;
+    border-radius: 90px;
+
+}
+
+/*________menu___*/
+.container-menu{
+    width: 100%;
+    height: 70px;
+    background: #1f41b1;
+    padding:0px 20px
+
+}
+.menu{
+    max-width: 940px;
+    margin:auto;
+    height: 100%;
+}
+nav {
+    height: 100%;
+}
+nav ul{
+    height: 100%;
+    display: flex;
+}
+nav ul li{
+    height: 100%;
+    list-style: none;
+    padding-left: 25px;
+    margin-top: 20px;
+    
+}
+nav ul li a{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+nav ul li a:hover{
+    transform: scale(1.1);
+    background: #0074c7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+
+main{
+    padding:40px 40px;
+    margin-top: 194px;
+}
+/*elementos responsivos*/
+.icon-menu{
+    font-size: 26px;
+    color:white;
+    cursor:pointer;
+    width:26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+#label-check{
+    width: 26px;
+    height: 100%;
+    display:none;
+}
+#check-menu{
+    display: none;
+}
+
+
+
+
+
+/*___________sobremi______*/
+
+
+h1{
+    text-align: center;
+    font-size:2em; /* dos veces ese navegador*/
+    margin-top: 30px;
+    clear: left;
+
+}
+.portada{
+    padding: 5em 0;
+    width:940px;
+    margin:0 auto;
+
+}
+
+
+
+.fotoperfil {    
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+    border-radius: 30px;
+       
+}
+.portada p{
+    width: 100%;
+    text-align: right;
+    font-size: 25px;
+    line-height: 1.5em;/*interlineado*/
+}
+
+.redes{
+    font-size: 25px;
+}
+.redes i{
+    padding-left: 15px;
+    color:rgb(18, 113, 236);
+
+
+}
+.redes a :hover{
+     
+    font-size: 30px;
+    color:rgb(236, 178, 16)
+    
+}
+.descripcion h2  {
+    
+    padding-bottom: 15px;
+    
+}
+
+.descripcion{
+    background: #EAF2FD;
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;    
+}
+.descripcion p{
+    font-size: 22px;
+    line-height: 1.5em;
+    text-align: left;
+
+}
+
+#firma{  
+      
+    width: 130px;
+    height: 80px;
+    margin-bottom: 30px; 
+    
+    
+}
+
+/*__________________skills____________*/
+
+.capacitacion{
+    width: 940px;
+    margin: 0 auto;
+    padding:50px;
+}
+
+.capacitacion li{
+    display: inline-block;
+    width: 40%;
+    text-align: center;    
+    padding: 30px 20px;
+    border: 2px solid #1f0450;
+    border-radius: 10px;
+    margin:10px;
+    transition:1s all;
+    box-sizing: border-box;
+    
+    
+}
+
+
+.capacitacion img{
+   
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    margin: 20px 10px;
+  
+}
+
+
+.capacitacion h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+.certif{
+    background-color: #22e609;
+}
+
+.capacitacion a{
+   
+    font-size: 25px;
+    display: block;
+  
+    padding: 15px;
+    border-radius: 40px;
+    text-decoration: none
+}
+/*------skills__formacion__*/
+
+.unc a img{
+    height: 270px;
+}
+
+#certjs, #certhtmlcss, #certgitgithab, #certhabilidades {
+    display: none;
+    width: 100%;
+}
+
+#certjs img, #certhtmlcss img, #certgitgithab img, #certhabilidades img, #diplomaap img, #diplomarrhh img, #diplomacont img{
+    width: 40%;
+    transition: all 400ms;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    align-content: flex-end;
+
+    
+    
+}
+
+#certjs img:hover, #certhtmlcss img:hover, #certgitgithab img:hover, #certhabilidades img:hover,#diplomaap img:hover, #diplomarrhh img:hover, #diplomacont img:hover {
+    transform: scale(1.5);
+    background-image: cover;
+
+
+}
+
+/*--------------hobbies------*/
+
+.hobbies{
+    width: 940px;
+    margin:0 auto;
+    padding: 50px;
+    
+}
+.hobbies li{
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;/*vertical horizontal*/
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+.hobbies li:hover{
+    border-color: #22e609;
+    font-size: 30px;
+
+}
+
+.hobbies h2{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.hobbies li:hover h2{
+    font-size: 33px;
+    
+}
+
+.hobbies img{
+    width: 30%;
+    margin:30px;
+}
+/*__________formacion______*/
+.capacitacion p{
+    font-size: 20px;
+}
+.formacademica{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.formacademica a{
+    background-color: #EAF2FD;
+}
+.formacademica h2{
+    font-size: 20px;
+}
+
+.dipacad{
+    background-color: none;
+    align-content: center;
+    padding: 0;
+
+}
+.diplomas{
+    width: 900px;
+    margin-left: 240px;
+}
+#diplomaap, #diplomarrhh, #diplomacont{
+    display: none;
+}
+
+/*_______________________proyectos________*/
+
+.proyectos{
+    width: 940px;
+    margin:0 auto;
+    padding: 50px;
+}
+
+
+.proyectos p{
+    font-size: 20px;
+}
+
+
+.proyectos img{
+    width: 50%;
+
+}
+
+.ahorcado .info{
+    
+    width: 200px;
+    margin:20px;
+}
+
+.encriptador{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+.ahorcado{
+    flex: none;
+}
+.ahorcado img{
+    float:right;
+    height: 230px;
+}
+
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+
+.proyectos a{
+    text-decoration: none;/*alterar el subrrayado*/
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;    
+    background-color: #22e609;
+    display: block;
+    margin:10px 0px;
+    text-align: center;
+    padding:10px;
+    border-radius: 30px;
+}
+#videoencriptador, #juegoahorcado{
+    display:none;
+    width: 100%;    
+    margin:30px 10px 30px 10px;
+    padding: 30px;
+
+}
+
+/*____________contacto_____*/
+.formulario{
+    width: 940px;
+    margin:0 auto;
+    padding: 50px;
+}
+
+form h2, p{
+    text-align: center;
+    line-height:1.4em;/*interlineado*/
+}
+
+.formulario p em strong{
+    color:red;
+}
+
+form{
+    width: 50%;
+    margin:40px 0;
+    
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+
+.input-patron{
+    display:block;
+    margin:0 0 20px;
+    padding: 10px 25px;
+    width: 85%;
+}
+
+
+.imagenContacto{
+   display : inline;
+   float:right;
+   width: 40%;
+   height: 200px;
+   margin:40px;
+   
+    
+}
+
+.contacto{
+    width: 50%;
+    padding: 20px 0;
+    font-size: 19px;
+    color: #555555;
+    background: #22e609;
+    border:none;
+    border-radius: 10px;
+    transition:1s all;
+    cursor:pointer;
+    margin:20px 0;
+
+
+}
+
+.contacto:hover{
+    background: rgb(14, 188, 211);
+    transform:scale(1.2);
+}
+footer{
+    
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(47, 230, 230);
+    font-size: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+/*_____________responsivo_____*/
+
+@media screen and (max-width:500px){
+    
+    header{
+        position:fixed;
+        width: 100%;
+        top:0;
+    }
+    nav ul{
+        flex-direction: column;
+        background-color: #023877;
+        position:fixed;
+        left:0;
+        top:126px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity:0;
+        visibility:hidden;
+       
+
+    }
+    
+
+    nav ul li a:hover{
+        transform: scale(1);
+        width: 100%;
+
+    }
+    .icon-menu{
+        display:flex;
+    }
+    #check-menu:checked ~ nav ul {
+        height: 500px;
+        visibility: visible;
+        opacity: 1;
+
+
+    }
+    #label-check{
+        display:block;
+    }
+
+    
+    
+    main{
+        margin-top: 126px;
+    }
+    
+    
+  
+    .portada, .descripcion{
+        width: 70%;
+        font-size: 10px;
+
+    }
+    h1{
+        width: 30%;
+    }
+
+    .portada p{
+        text-align: center;
+        width: 100%;
+    }
+    .fotoperfil{
+        float:none;
+        display:block;
+        margin:50px;
+        
+    }
+    .descripcion{
+        
+        background-color: #eaf2fd;
+        padding: 2rem 1rem;
+    }
+    .capacitacion li{
+        display: block;
+        width: 30%;
+        
+    }
+    .certificados  img{
+        display:block;
+        width: 150px;
+        height: 230px;
+    }
+    #certjs img, #certhtmlcss img, #certgitgithab img, #certhabilidades img, #diplomaap img, #diplomarrhh img, #diplomacont img{
+        width: 100%;
+        
+        position: absolute;
+        padding: 10px;
+        margin: 10px;
+        align-content: flex-end;
+    
+        
+        
+    }
+    #certjs img:hover, #certhtmlcss img:hover, #certgitgithab img:hover, #certhabilidades img:hover,#diplomaap img:hover, #diplomarrhh img:hover, #diplomacont img:hover {
+        transform: none;
+        
+    
+    
+    }
+
+    .hobbies{
+        margin-left: 50px;
+        width: 100%;
+    }
+
+    .formacademica {
+        width: 100%;
+    }
+
+    .formacademica img {
+        width: 70px;
+        height: 70px;
+    }
+    .unc img{
+        width: 80%;
+        height: 40px;
+    }
+    .diplomas{
+        margin:0;
+        width: 80%;
+
+    }
+    .proyectos{
+        width: auto;
+    }
+
+    .proyectos h1, .capacitacion h1{
+        width: 30%;
+        
+    }
+    .proyectos .info{
+        display: block;
+        width: 100%;
+
+    }
+    .proyectos .encriptador img{
+        position: relative;
+    }
+    .proyectos img{
+        display: block;
+        width: 100%;
+    }
+    .encriptador{
+        display: block;
+
+    }
+    .ahorcado{
+        width: auto;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+    .formulario img{
+        width: 30%;
+        margin:0;
+    }
+    form{
+        width: 70%;
+    }
+    .formulario .contacto{
+        font-size: 20px;
+        width: 100%;
+
+    }
+
+    
+
+    
+    
+    
+   
+}
