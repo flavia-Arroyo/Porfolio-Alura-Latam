@@ -496,6 +496,7 @@ footer{
 
 @media screen and (max-width:500px){
     
+    
     header{
         position:fixed;
         width: 100%;
@@ -507,7 +508,7 @@ footer{
         position:fixed;
         left:0;
         top:126px;
-        width: 100%;
+        width: 30%;
         height: 0px;
         transition: all 300ms ease;
         z-index: 100;
@@ -546,7 +547,7 @@ footer{
     
   
     .portada, .descripcion{
-        width: 70%;
+        padding:10px 10px;
         font-size: 10px;
 
     }
@@ -568,12 +569,20 @@ footer{
         
         background-color: #eaf2fd;
         padding: 2rem 1rem;
+        font-size: 22px;
     }
-    .capacitacion li{
-        display: block;
-        width: 30%;
-        
+    .descripcion p{
+        font-size: 27px;
     }
+    .skillscert{
+        display:none;
+    }
+    /* no se como poner los certificados en responsivo*/
+    /*.certificados{
+        width: 100%;
+    }
+    
+    
     .certificados  img{
         display:block;
         width: 150px;
@@ -581,26 +590,10 @@ footer{
     }
     #certjs img, #certhtmlcss img, #certgitgithab img, #certhabilidades img, #diplomaap img, #diplomarrhh img, #diplomacont img{
         width: 100%;
-        
-        position: absolute;
-        padding: 10px;
-        margin: 10px;
-        align-content: flex-end;
-    
-        
-        
-    }
-    #certjs img:hover, #certhtmlcss img:hover, #certgitgithab img:hover, #certhabilidades img:hover,#diplomaap img:hover, #diplomarrhh img:hover, #diplomacont img:hover {
-        transform: none;
-        
-    
-    
-    }
-
-    .hobbies{
-        margin-left: 50px;
-        width: 100%;
-    }
+        height: 500px;
+        margin: 10px 5px 10px 100px;
+               
+    }*/    
 
     .formacademica {
         width: 100%;
@@ -610,18 +603,16 @@ footer{
         width: 70px;
         height: 70px;
     }
-    .unc img{
-        width: 80%;
-        height: 40px;
+    .unc a img{
+        height: 100px;
     }
+    
     .diplomas{
         margin:0;
         width: 80%;
 
     }
-    .proyectos{
-        width: auto;
-    }
+    
 
     .proyectos h1, .capacitacion h1{
         width: 30%;
@@ -632,36 +623,39 @@ footer{
         width: 100%;
 
     }
-    .proyectos .encriptador img{
-        position: relative;
-    }
+    
     .proyectos img{
         display: block;
         width: 100%;
+        height: 400px;
     }
     .encriptador{
         display: block;
+        padding-right: 30px;
 
     }
     .ahorcado{
         width: auto;
+        padding-right: 40px;
+    }
+    form{
+        width: 70%;
+        margin:0;
+        margin-left: 40px;
     }
 
-    .formulario{
-        width: 100%;
-    }
+    
     .formulario img{
         width: 30%;
         margin:0;
     }
-    form{
-        width: 70%;
-    }
+    
     .formulario .contacto{
         font-size: 20px;
         width: 100%;
 
     }
+    
 
     
 
