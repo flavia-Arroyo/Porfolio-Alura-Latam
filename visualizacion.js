@@ -1,6 +1,3 @@
-
-
-
 function certifjs(){
     document.getElementById("certjs").style.display= "block"
     document.getElementById("certhtmlcss").style.display= "none"
