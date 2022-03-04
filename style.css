@@ -86,7 +86,7 @@ nav ul li a:hover{
 
 main{
     padding:40px 40px;
-    margin-top: 194px;
+   
 }
 /*elementos responsivos*/
 .icon-menu{
@@ -111,7 +111,6 @@ main{
 
 
 
-
 /*___________sobremi______*/
 
 
@@ -123,7 +122,7 @@ h1{
 
 }
 .portada{
-    padding: 5em 0;
+    padding: 7em 0;
     width:940px;
     margin:0 auto;
 
@@ -168,7 +167,7 @@ h1{
 
 .descripcion{
     background: #EAF2FD;
-    padding: 3em 0;
+    padding: 130px 0;
     width: 940px;
     margin: 0 auto;    
 }
@@ -190,10 +189,11 @@ h1{
 
 /*__________________skills____________*/
 
+
 .capacitacion{
     width: 940px;
     margin: 0 auto;
-    padding:50px;
+    padding:126px 50px;
 }
 
 .capacitacion li{
@@ -279,7 +279,7 @@ h1{
 .hobbies{
     width: 940px;
     margin:0 auto;
-    padding: 50px;
+    padding: 126px 50px;
     
 }
 .hobbies li{
@@ -351,7 +351,7 @@ h1{
 .proyectos{
     width: 940px;
     margin:0 auto;
-    padding: 50px;
+    padding: 126px 50px;
 }
 
 
@@ -419,7 +419,7 @@ h1{
 .formulario{
     width: 940px;
     margin:0 auto;
-    padding: 50px;
+    padding: 126px 50px;
 }
 
 form h2, p{
@@ -548,13 +548,22 @@ footer{
     
     
     main{
+        padding:10px;
+        
+
+    }
+ 
+    
+    .sobremi,.descripcion,.skills .capacitacion, .hobbies, .formacademica, .proyectos, .formulario{
         margin-top: 126px;
     }
-    
+    .portada{
+        padding:2em 0;
+    }
     
   
     .portada, .descripcion{
-        width: auto;
+        width: 90%;
 
     }
     h1{
