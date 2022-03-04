@@ -587,7 +587,13 @@ footer{
         font-size: 22px;
     }
     .descripcion p{
-        font-size: 27px;
+        font-size: 25px;
+    }
+
+    .capacitacion{
+        width: auto;
+        padding:0;
+        margin-left: 60px;
     }
     
     .capacitacion li{
@@ -621,11 +627,7 @@ footer{
         margin-bottom: 15px;
     } 
 
-    .capacitacion{
-        width: auto;
-        padding:0;
-        margin-left: 60px;
-    }
+    
     .formacademica{
         width: auto;
         padding: 0;
@@ -665,8 +667,7 @@ footer{
     }
     .formulario{
         width: 100%;
-        padding: 0px;
-             
+        
     }
     .imagenContacto{
         display:none;
