@@ -5,6 +5,7 @@ function certifjs(){
     document.getElementById("certhabilidades").style.display= "none"
 }
 
+
 function certihtmlcss(){
     document.getElementById("certhtmlcss").style.display= "block"
     document.getElementById("certjs").style.display= "none"    
@@ -12,6 +13,7 @@ function certihtmlcss(){
     document.getElementById("certhabilidades").style.display= "none"
 
 }
+
 
 function certigit(){
     document.getElementById("certgitgithab").style.display= "block"
