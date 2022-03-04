@@ -494,9 +494,7 @@ footer{
 
 /*_____________responsivo_____*/
 
-@media screen and (max-width:500px){
-    
-    
+@media screen and (max-width:500px){    
     header{
         position:fixed;
         width: 100%;
