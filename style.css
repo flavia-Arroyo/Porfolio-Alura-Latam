@@ -596,6 +596,9 @@ footer{
         margin-left: 50px;
                
     }
+    .hobbies{
+        width: auto;
+    }
     .hobbies ul li{
         display: block;
         margin-bottom: 15px;
@@ -607,6 +610,7 @@ footer{
         margin-left: 60px;
     }
     .formacademica{
+        width: auto;
         padding: 0;
 
     }
@@ -633,7 +637,7 @@ footer{
 
     }
     .formulario{
-        width: 200%;
+        width: auto;
         padding: 0px;
         margin-right: 20px;
        
