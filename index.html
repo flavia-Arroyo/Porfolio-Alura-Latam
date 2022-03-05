@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">   
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href ="style.css">
-        <script src="visualizacion.js"></script>
+        <script defer src="visualizacion.js"></script>
 
         <title>MI PORFOLIO</title>
     </head>
@@ -80,26 +80,26 @@
                         <h2>HTML5 y CSS 3</h2>
                         <img src="imagenes/skills/css3yhtml5.png" alt="logo css3yhtml5">
         
-                        <a class="skillscert"href="#certificados"  class="certif"  onclick= "certihtmlcss();">Certificados</a>
+                        <a class="skillscert"href="#certificados"   onclick= "activarDiploma('certhtmlcss');">Certificados</a>
                         
         
                     </li>
                     <li>
                         <h2> GIT Y GITHUB</h2>
                         <img src="imagenes/skills/gitgithub.png" alt="logo git github">
-                        <a class="skillscert" href ="#certificados" class ="certif"  onclick= "certigit();">Certificados</a>
+                        <a class="skillscert" href ="#certificados"   onclick= "activarDiploma('certgitgithab');">Certificados</a>
                         
                     </li>
                     <li>
                         <h2>JAVASCRIPT</h2>
                         <img src="imagenes/skills/javascript.png" alt="logo javascript" id="js">
-                        <a class="skillscert" href ="#certificados" class="certif"  onclick= "certifjs();">Certificados</a>
+                        <a class="skillscert" href ="#certificados"  onclick= "activarDiploma('certjs');">Certificados</a>
                         
                     </li>
                     <li>
                         <h2>SOFTSKILLS</h2>
                         <img src="imagenes/skills/softskills.jpg" alt="logo habilidades">
-                        <a class="skillscert" href="#certificados" class="certif"  onclick= "certisoftskills();">Certificados</a>
+                        <a class="skillscert" href="#certificados"  onclick= "activarDiploma('certhabilidades');">Certificados</a>
                         
                     </li>
         
@@ -107,7 +107,7 @@
                 <a name="certificados"></a>
                 <section class="certificados">
                     
-                    <div id="certjs"> 
+                    <div id="certjs" class="displayNone"> 
                         <img src="certificados/JavaScript/jsintroduccion.png"alt = "introduccionjs">
                         <img src="certificados/JavaScript/logicaparte1.png" alt="logicaparte1">
                         <img src="certificados/JavaScript/logicaparte2.png" alt ="logicaparte2">
@@ -116,17 +116,17 @@
                     
                     </div>
                     
-                    <div id="certhtmlcss">
+                    <div id="certhtmlcss"class="displayNone">
                         <img src="certificados/html y css/htmlcssparte1.png"alt="htmlcss1">
                         <img src="certificados/html y css/htmlcssparte2.png" alt ="htmlcss2">
                         <img src="certificados/html y css/htmlcssparte3.png"alt ="htmlcss3">
                     </div>
                     
-                    <div id="certgitgithab">
+                    <div id="certgitgithab" class="displayNone">
                         <img src="certificados/Git Github/gitgithub.png" alt ="gitygithub">
                     </div>
                     
-                    <div id="certhabilidades">
+                    <div id="certhabilidades" class="displayNone">
                         <img src="certificados/habilidades blandas/businessagility.png" alt="businessagility">
                         <img src="certificados/habilidades blandas/bussinessmodelcanvasparte1.png" alt="bussinesmc1">
                         <img src="certificados/habilidades blandas/bussinessmodelcanvasparte2.png" alt="bussinessmc2">
@@ -171,7 +171,7 @@
                     <li>
                         <h2>Argentina Programa</h2>
                         
-                        <a href="#diplomas"  onclick="diplomaargpro();"><img src= "formacion/LOGOS/argentinaprograma.jpg" alt="argentinaprograma"></a>
+                        <a href="#diplomas"  onclick="activarDiploma('diplomaap');"><img src= "formacion/LOGOS/argentinaprograma.jpg" alt="argentinaprograma"></a>
                         <p>Seprogramar - Egresado: Diciembre 2021</p> 
                         <p>Yoprogramo-En Curso</p>    
         
@@ -186,7 +186,7 @@
                     </li>
                     <li>
                         <h2>Universidad Europea del Atlantico</h2>
-                        <a href="#diplomas" onclick="diplomarrhh();" ><img src="formacion/LOGOS/uea.jpg" alt="uea" ></a>
+                        <a href="#diplomas" onclick="activarDiploma('diplomarrhh');" ><img src="formacion/LOGOS/uea.jpg" alt="uea" ></a>
                         <p>Magister en Recursos Humanos,Gestión del Conocimiento</p>
                         <p>Egresada 2020</p>
                         
@@ -199,16 +199,19 @@
                     
         
                 </ul>
-                <a name="diplomas" class="dipacad"></a>
+                
                 <section class="diplomas">
+                    <a name="diplomas" class="dipacad"></a>
                     
-                    <div id="diplomaap">                   
+                    <div id="diplomaap"class="displayNone">                   
                         <img src="formacion/CERTIFICADOS/seprogramar.png">
                     </div>
-                    <div id="diplomarrhh">                     
+                    <div id="diplomarrhh"class="displayNone">                     
                         <img src="formacion/CERTIFICADOS/titulo magister.jpg">
                     </div>
-                    <div id="diplomacont">
+                    <div id="diplomacont"class="displayNone
+                    
+                    ">
                         
                     </div>
 

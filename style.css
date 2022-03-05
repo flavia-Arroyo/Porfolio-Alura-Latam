@@ -203,7 +203,7 @@ h1{
     padding: 30px 20px;
     border: 2px solid #1f0450;
     border-radius: 10px;
-    margin:10px;
+    margin:10px 0px 10px 40px;
     transition:1s all;
     box-sizing: border-box;
     
@@ -213,8 +213,8 @@ h1{
 
 .capacitacion img{
    
-    width: 200px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     text-align: center;
     margin: 20px 10px;
   
@@ -226,8 +226,8 @@ h1{
     font-weight: bold;
     padding: 10px;
 }
-.certif{
-    background-color: #22e609;
+.skills .capacitacion a{
+    background: #22e609;
 }
 
 .capacitacion a{
@@ -236,12 +236,14 @@ h1{
     display: block;
     padding: 15px;
     border-radius: 40px;
-    text-decoration: none;
+    
 }
 /*------skills__formacion__*/
-
+.displayNone{
+    display: none;
+}
 .unc a img{
-    height: 270px;
+    height: 177px;
 }
 .certificados{
     width: 940px;
@@ -251,28 +253,24 @@ h1{
 }
 
 #certjs, #certhtmlcss, #certgitgithab, #certhabilidades {
-    display: none;
+    
     width: 100%;
 }
 
 #certjs img, #certhtmlcss img, #certgitgithab img, 
-#certhabilidades img, #diplomaap img, #diplomarrhh img, #diplomacont img{
+#certhabilidades img{
     width: 40%;
-    transition: all 400ms;
     padding: 10px;
     margin: 10px;
     align-content: center;
-
-    
-    
+      
+}
+#diplomaap img, #diplomarrhh img, #diplomacont img{
+    width: 60%;
+    height: 200px;
 }
 
-#certjs img:hover, #certhtmlcss img:hover, #certgitgithab img:hover, #certhabilidades img:hover,#diplomaap img:hover, #diplomarrhh img:hover, #diplomacont img:hover {
-    transform: scale(1.12);
-    background-image: cover;
 
-
-}
 
 /*--------------hobbies------*/
 
@@ -342,9 +340,7 @@ h1{
     width: 900px;
     margin-left: 240px;
 }
-#diplomaap, #diplomarrhh, #diplomacont{
-    display: none;
-}
+
 
 /*_______________________proyectos________*/
 
@@ -554,9 +550,12 @@ footer{
     }
  
     
-    .sobremi,.descripcion,.skills .capacitacion, .hobbies, .formacademica, .proyectos, .formulario{
+    .sobremi,.descripcion,.hobbies, .formacademica, .proyectos, .formulario{
         margin-top: 126px;
+        padding:0px;
+       
     }
+   
     .portada{
         padding:2em 0;
     }
@@ -568,32 +567,33 @@ footer{
     }
     h1{
         width: 30%;
+        margin-left: 70px;
+        margin-top:0;
     }
+    
 
     .portada p{
         text-align: center;
         width: 100%;
+        padding-bottom: 30px;
     }
     .fotoperfil{
         float:none;
         display:block;
-        margin:50px;
+        margin:20px 30px;
         
     }
-    .descripcion{
-        
-        background-color: #eaf2fd;
-        padding: 2rem 1rem;
-        font-size: 22px;
-    }
+    
     .descripcion p{
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .capacitacion{
         width: auto;
-        padding:0;
-        margin-left: 60px;
+        padding: 0px;
+        margin-left: 30px;
+        
+       
     }
     
     .capacitacion li{
@@ -602,9 +602,13 @@ footer{
         
         
     }
+    .capacitacion img{
+        width: 60%;
+        height: 100px;
+    }
    
     .certificados{
-        width: 100%;
+        width: 90%;
     }
     
     
@@ -614,17 +618,19 @@ footer{
         height: 230px;
     }
     #certjs img, #certhtmlcss img, #certgitgithab img, #certhabilidades img, #diplomaap img, #diplomarrhh img, #diplomacont img{
-        width: 100%;
+        width: 80%;
         height: 300px;
       
                
     }
     .hobbies{
-        width: auto;
+        width: 100%;
+        
     }
     .hobbies ul li{
         display: block;
         margin-bottom: 15px;
+        margin-left: 20px;
     } 
 
     
@@ -632,6 +638,9 @@ footer{
         width: auto;
         padding: 0;
 
+    }
+    .formacademica h1{
+        margin-left: 30px;
     }
     .formacademica img{
         width: 70%;
@@ -643,11 +652,17 @@ footer{
     .diplomas img{
         width: auto;
     }
+    .unc a img{
+        height: 170px;
+    }
 
     
     .proyectos{
-        width: auto;
+        width: 90%;
         padding:0px;
+    }
+    .proyectos h1{
+        margin-left: 120px;
     }
     .encriptador img{
         height: 200px;
@@ -672,6 +687,9 @@ footer{
     .imagenContacto{
         display:none;
         
+    }
+    .contacto{
+        width: 70%;
     }
     
     
