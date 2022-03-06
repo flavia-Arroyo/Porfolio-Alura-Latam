@@ -125,6 +125,7 @@ h1{
     padding: 7em 0;
     width:940px;
     margin:0 auto;
+    background: linear-gradient(#ffff,#EAF2FD);
 
 }
 
@@ -135,6 +136,7 @@ h1{
     float: left;
     margin: 0 20px 20px 0;
     border-radius: 30px;
+    box-shadow: 10px 10px 40px 15px #000000;
        
 }
 .portada p{
@@ -166,7 +168,7 @@ h1{
 }
 
 .descripcion{
-    background: #EAF2FD;
+    background:linear-gradient(#EAF2FD,#c3d9f7);
     padding: 130px 0;
     width: 940px;
     margin: 0 auto;    
@@ -194,6 +196,7 @@ h1{
     width: 940px;
     margin: 0 auto;
     padding:126px 50px;
+   
 }
 
 .capacitacion li{
@@ -278,6 +281,7 @@ h1{
     width: 940px;
     margin:0 auto;
     padding: 126px 50px;
+   
     
 }
 .hobbies li{
@@ -348,6 +352,7 @@ h1{
     width: 940px;
     margin:0 auto;
     padding: 126px 50px;
+   
 }
 
 
@@ -358,8 +363,9 @@ h1{
 
 .proyectos img{
     width: 50%;
-
+    box-shadow: 10px 10px 30px 12px #000000;
 }
+
 
 .ahorcado .info{
     
@@ -416,6 +422,7 @@ h1{
     width: 940px;
     margin:0 auto;
     padding: 126px 50px;
+    
 }
 
 form h2, p{
@@ -550,7 +557,7 @@ footer{
     }
  
     
-    .sobremi,.descripcion,.hobbies, .formacademica, .proyectos, .formulario{
+    .sobremi,.descripcion, .formacademica, .proyectos{
         margin-top: 126px;
         padding:0px;
        
@@ -588,10 +595,11 @@ footer{
         font-size: 22px;
     }
 
-    .capacitacion{
+    .capacitacion, .formulario{
         width: auto;
         padding: 0px;
-        margin-left: 30px;
+        margin-top: 126px;
+        margin-left: 35px;
         
        
     }
@@ -625,6 +633,9 @@ footer{
     }
     .hobbies{
         width: 100%;
+        margin-left: 10px;
+        padding: 126px 40px;
+
         
     }
     .hobbies ul li{
@@ -640,7 +651,7 @@ footer{
 
     }
     .formacademica h1{
-        margin-left: 30px;
+        margin-left: 50px;
     }
     .formacademica img{
         width: 70%;
@@ -680,10 +691,7 @@ footer{
         width: 100%;
         margin:0px;
     }
-    .formulario{
-        width: 100%;
-        
-    }
+    
     .imagenContacto{
         display:none;
         
