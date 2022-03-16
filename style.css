@@ -20,6 +20,9 @@ header{
     width: 100%;
     top:0;
     left:0;
+    height: 70px;
+    background: #1f41b1;
+    z-index: 9999;
   
    
 }
@@ -49,16 +52,10 @@ h3{
 
 /*-------------------------------------------MENU----------------------------------*/
 
-.container-menu{
-    width: 100%;
-    height: 70px;
-    background: #1f41b1;
-    
 
-}
 
 nav {
-    
+    position: flex;
     align-items: center;
     justify-content: space-around;
     
@@ -127,7 +124,7 @@ nav {
 .sobremi,.skills, .hobbbies, .capacitacion, .proyectos{
     width: 100%;
     height: auto;
-    padding-top: 120px;
+    padding-top: 80px;
 
 }
 .formulario{
@@ -186,7 +183,7 @@ h1{
     
 }
 .descripcion{
-    padding-top: 120px;
+    padding-top: 80px;
     width: 100%;
 }
 .descripcion p{
@@ -550,7 +547,7 @@ footer{
         margin:0;
         padding: 0;
         width: 100%;
-        display: none;
+        /*display: none;*/
 
     }
 
