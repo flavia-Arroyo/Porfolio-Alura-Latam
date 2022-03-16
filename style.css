@@ -6,6 +6,9 @@
     box-sizing: border-box;
     
 }
+body{
+    background:aqua;
+}
 
 
 
@@ -23,127 +26,147 @@ header{
 
 /*__________header superior___*/
 
-.header-superior{
-    max-width: 100%;
+/*.header-superior{
+    width: 100%;
     margin:auto;
-    display:flex;
-    align-items: center;
     padding:10px;
     background-color: rgb(62, 216, 230);
 
 
-}
+}*/
 
-.logo img{
+.logo{
     width: 30px;
+    height: 25px;
     border-radius: 90px;
+    margin-top: 10px;
 
 }
+h3{
+    color:#fff;
+    display: inline;
+}
 
-/*________menu___*/
+/*-------------------------------------------MENU----------------------------------*/
+
 .container-menu{
     width: 100%;
     height: 70px;
     background: #1f41b1;
-    padding:0px 20px;
+    
 
 }
-.menu{
-    max-width: 940px;
-    margin:auto;
-    height: 100%;
-}
+
 nav {
-    height: 100%;
-}
-nav ul{
-    height: 100%;
-    display: flex;
-}
-nav ul li{
-    height: 100%;
-    list-style: none;
-    padding-left: 25px;
-    margin-top: 20px;
+    
+    align-items: center;
+    justify-content: space-around;
+    
+    
     
 }
-nav ul li a{
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    padding: 14px;
+.enlaces-menu{
+    display: flex;
+    padding:0;
+    float:right;
+    
+}
+.enlaces-menu li{
+    
+    display: inline;
+    padding:0 20px;
+    transition: all 300ms ease;
+    
+}
+.enlaces-menu  li a{
+    font-size: 1.4rem;
+    font-weight:600;
     text-transform: uppercase;
     color:#fff;
-    font-size: 14px;
-    transition: all 300ms ease;
+    border-radius: 90px;
+    
 }
-nav ul li a:hover{
+.enlaces-menu li:hover{
     transform: scale(1.1);
     background: #0074c7;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
 }
 
-main{
-    padding:40px 40px;
-   
-}
+/*
 /*elementos responsivos*/
-.icon-menu{
-    font-size: 26px;
-    color:white;
-    cursor:pointer;
-    width:26px;
-    height: 100%;
+
+
+.ham{
     display: none;
-    align-items: center;
+    cursor: poiter;
+    border:none;
+    margin:0;
+    background-color: transparent;
+}
+.ham span{
+    display: block;
+    background-color: #fefefe;
+    height: 3px;
+    width: 28px;
+    margin:10px auto;
+    border-radius: 2px;
 }
 
-#label-check{
+/*#label-check{
     width: 26px;
     height: 100%;
     display:none;
 }
 #check-menu{
     display: none;
+}*/
+
+
+/*----------------------------------MEDIDAS GENERALES SECCIONES-------------------*/
+.sobremi,.skills, .hobbbies, .capacitacion, .proyectos{
+    width: 100%;
+    height: auto;
+    padding-top: 120px;
+
 }
-
-
-
-
-/*___________sobremi______*/
-
-
+.formulario{
+    width: 50%;
+}
 h1{
     text-align: center;
-    font-size:2em; /* dos veces ese navegador*/
-    margin-top: 30px;
+    font-size:2em; 
+    margin: 30px 0px 30px 0px;
     clear: left;
 
 }
-.portada{
-    padding: 9em 0;
-    width:940px;
-    margin:0 auto;
-    background: linear-gradient(#ffff,#EAF2FD);
 
+
+/*-----------------------------------SECCION SOBRE MI-----------------*/
+
+.portada, .descripcion{
+  
+    padding:20px;
+    text-align: center;
+    
 }
 
-
-
 .fotoperfil {    
-    width: 120px;
+   
     float: left;
     margin: 0 20px 20px 0;
     border-radius: 30px;
     box-shadow: 10px 10px 40px 15px #000000;
        
 }
-.portada p{
-    width: 100%;
+.descperfil{
+    
     text-align: right;
     font-size: 25px;
-    line-height: 1.5em;/*interlineado*/
+    line-height: 1.5em;
+    margin:20px;
+    padding: 30px;
+    
 }
 
 .redes{
@@ -162,47 +185,73 @@ h1{
     color:rgb(236, 178, 16);
     
 }
-.descripcion h2  {
-    
-    padding-bottom: 15px;
-    
-}
-
 .descripcion{
-    background:linear-gradient(#EAF2FD,#c3d9f7);
-    padding: 130px 0;
-    width: 940px;
-    margin: 0 auto;    
+    padding-top: 120px;
+    width: 100%;
 }
 .descripcion p{
-    font-size: 22px;
+    width: 97%;
+    font-size: 26px;
     line-height: 1.5em;
-    text-align: left;
+    text-align: justify;
 
 }
 
 #firma{  
-      
-    width: 130px;
-    height: 80px;
+    height: 160px;
     margin-bottom: 30px; 
+    display: flex;
     
     
 }
+    
+
+
 
 /*__________________skills____________*/
 
+.displayNone{
+    display: none;
+}
+.carrusel-contenedor{
+    position: relative;
 
-.capacitacion{
-    width: 940px;
-    margin: 0 auto;
-    padding:126px 50px;
-   
+}
+.carrusel-items img{
+    
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 20px 10px;
+  
+
 }
 
+
+.carrusel-anterior, .carrusel-siguiente{
+    position:absolute;
+    display: block;
+    width:30px;
+    height: 30px;
+    border:none;
+    top:calc(50% -35px);
+    cursor:pointer;
+    line-height: 30px;
+    text-align:center;
+    background: #0074c7;
+    color:#EAF2FD;
+    opacity:20%;
+
+
+
+}
+
+
+
+/*
 .capacitacion li{
     display: inline-block;
-    width: 40%;
+    width: auto;
     text-align: center;    
     padding: 30px 20px;
     border: 2px solid #1f0450;
@@ -217,7 +266,7 @@ h1{
 
 .capacitacion img{
    
-    width: 150px;
+    width: auto;
     height: 150px;
     text-align: center;
     margin: 20px 10px;
@@ -225,36 +274,24 @@ h1{
 }
 
 
-.capacitacion h2{
-    font-size: 30px;
-    font-weight: bold;
-    padding: 10px;
-}
-.skills .capacitacion a{
-    background: #22e609;
-}
-
 .capacitacion a{
    
     font-size: 25px;
     display: block;
     padding: 15px;
     border-radius: 40px;
+    background: #22e609;
     
 }
+
+/*
 /*------skills__formacion__*/
-.displayNone{
-    display: none;
-}
+
+
 .unc a img{
     height: 177px;
 }
-.certificados{
-    width: 940px;
-    margin: 0 auto;
-    padding:50px;
 
-}
 
 #certjs, #certhtmlcss, #certgitgithab, #certhabilidades {
     
@@ -278,13 +315,7 @@ h1{
 
 /*--------------hobbies------*/
 
-.hobbies{
-    width: 940px;
-    margin:0 auto;
-    padding: 126px 50px;
-   
-    
-}
+
 .hobbies li{
     display: inline-block;
     text-align: center;
@@ -349,12 +380,7 @@ h1{
 
 /*_______________________proyectos________*/
 
-.proyectos{
-    width: 940px;
-    margin:0 auto;
-    padding: 126px 50px;
-   
-}
+
 
 
 .proyectos p{
@@ -380,9 +406,7 @@ h1{
     align-items: center;
     padding: 2rem 0;
 }
-.ahorcado{
-    flex: none;
-}
+
 .ahorcado img{
     float:right;
     height: 230px;
@@ -419,17 +443,14 @@ h1{
 }
 
 /*____________contacto_____*/
-.formulario{
-    width: 940px;
-    margin:0 auto;
-    padding: 126px 50px;
-    
-}
+
+/* afectando las p
 
 form h2, p{
     text-align: center;
-    line-height:1.4em;/*interlineado*/
+    line-height:1.4em;/*interlineado
 }
+*/
 
 .formulario p em strong{
     color:red;
@@ -503,42 +524,50 @@ footer{
 
 /*_____________responsivo_____*/
 
-@media screen and (max-width:500px){    
-    header{
-        position:fixed;
-        width: 100%;
-        top:0;
+@media screen and (max-width:1048px){ 
+     
+    .ham{
+        display: block;
+        position: absolute;
+        top:15;
+        right: 25px;
     }
-    nav ul{
+    nav{
         flex-direction: column;
-        background-color: #023877;
-        position:fixed;
-        left:0;
-        top:123px;
+        display: flex;
+        align-items: flex-start;
+        padding:10px 0;
+        background: #1f41b1;
         width: 100%;
-        height: 0px;
-        transition: all 300ms ease;
-        z-index: 100;
-        opacity:0;
-        visibility:hidden;
-       
+        
 
     }
-    nav ul li a{
-        display:block;
-        padding:12px;
-    }
-    
+    .enlaces-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 92vh;
+        margin:0;
+        padding: 0;
+        width: 100%;
+        display: none;
 
-    nav ul li a:hover{
+    }
+
+    .enlaces-menu li{
+        width: 100%;
+    }
+    .enlaces-menu li:hover{
         transform: scale(1);
-        width: 100%;
+    }
+   
 
+
+    .enlaces-menu .activado{
+        display: flex;
+        
     }
-    .icon-menu{
-        display:flex;
-    }
-    #check-menu:checked ~ nav ul {
+    /*#check-menu:checked ~ nav ul {
         height: 500px;
         visibility: visible;
         opacity: 1;
@@ -547,32 +576,35 @@ footer{
     }
     #label-check{
         display:block;
+    }*/
+    .fotoperfil{
+        float:none;
     }
-
+    .portada, .descripcion{
+        margin:0;
+    }
+    .descperfil, .descripcion p{
+        width: 90%;
+        text-align: left;
+        padding:20px
+    }
     
     
-    main{
-        padding:10px;
-        
 
-    }
+    
  
-    
-    .sobremi,.descripcion, .formacademica, .proyectos{
-        margin-top: 126px;
+    /*
+    .portada,.sobremi,.descripcion, .formacademica, .proyectos{
+        margin-top: 160px;
         padding:0px;
+        width: 100%;
        
     }
    
-    .portada{
-        padding:2em 0;
-    }
+    
     
   
-    .portada, .descripcion{
-        width: 90%;
-
-    }
+    
     h1{
         width: 30%;
         margin-left: 70px;
@@ -700,7 +732,7 @@ footer{
     .contacto{
         width: 70%;
     }
-    
+    */
     
     
    

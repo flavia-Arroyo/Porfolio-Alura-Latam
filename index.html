@@ -5,14 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">   
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        
         <link rel="stylesheet" href ="style.css">
-        <script defer src="visualizacion.js"></script>
+        
 
         <title>MI PORFOLIO</title>
     </head>
     <body>
         <div class="header">
             <header>
+                <!---
                 <div class="header-superior">                
                     <div class="logo">
                        <h3>
@@ -20,13 +22,17 @@
                         Arroyo Flavia</h3>
                     </div>
                 </div>
+                --->
                 <div class="container-menu">
-                    <div class="menu">
-                        <input type="checkbox" id="check-menu">
-                        <label id="label-check"for="check-menu"><i class="fa-solid fa-bars icon-menu"></i></label>
-                        <nav>
-                            <ul>
-                                <li><a href="#home"><i class="fa-solid fa-house"></i></a></li>
+                    <div>
+                        <a href="#">
+                            <h3>
+                            <img class="logo" src="imagenes/foto-perfil.jpg" alt = "foto">Arroyo Flavia</h3>
+                        </a>
+                        
+                        <nav >
+                            <ul class="enlaces-menu">
+                                <li class="menu-items"><a href="#home"><i class="fa-solid fa-house"></i></a></li>
                                 <li><a href ="#sobremi">Sobre Mi</a></li>
                                 <li><a href ="#skills">Skills</a></li>
                                 <li><a href ="#hobbies">Hobbies</a></li>
@@ -35,9 +41,14 @@
                                 <li><a href ="#contacto">Contacto</a></li>     
                                 
                             </ul>
+                            <button class="ham" type="button">
+                                <span class="br-1"></span>
+                                <span class="br-1"></span>
+                                <span class="br-1"></span>
+                            </button>
                         </nav>
 
-                    </div>
+                    
                 </div>
                     
                 
@@ -52,7 +63,9 @@
                 <div class="portada">
                     
                     <img class= "fotoperfil" src="imagenes/foto-perfil.jpg">
-                    <p ><em>Soy <strong>Arroyo Flavia Elizabeth </strong>de nacionalidad Argentina, vivo en Córdoba Capital, tengo 40 años, soy Contadora Pública y Magister en Recursos Humanos. En la actualidad estoy formádome en el desarrollo de paginas web, participando del proyecto Oracle ONE en Alura Latam y Argentina Programa</em></p>
+                    <div  class="descperfil">
+                        <p>Soy<strong> Arroyo Flavia Elizabeth</strong>de nacionalidad Argentina, vivo en Córdoba Capital, tengo 40 años, soy Contadora Pública y Magister en Recursos Humanos. En la actualidad estoy formádome en el desarrollo de paginas web, participando del proyecto Oracle ONE en Alura Latam y Argentina Programa</p>
+                    </div>
                     <div class="redes">
                         <a href="http://wa.me/+5493516745305"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href=" https://www.linkedin.com/in/flavia-arroyo-b5306016b"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -63,45 +76,60 @@
                     </div>
 
                 </div>
+            </section>
                 <a name="sobremi"></a>               
-                <div class = "descripcion" >
+            <section class = "descripcion" >
                     
-                    <h2>SOBRE MI</h2>
+                    <h1>SOBRE MI</h1>
                     <p>Cuento con 10 años de experiencia en Contabilidad y Recursos Humanos, trabajando en la Universidad Nacional de Córdoba. <br>En la actualidad estoy incursionando en el desarrollo de paginas web y aspiro a ser una excelente profesional aplicando todos mis conocimientos previos para lograr generar valor agregado a mis proyectos. <br>Me gusta trabajar en equipo, fomento el trabajo colaborativo, soy comunicativa, persistente en lograr mis objetivos, atenta al detalle, proactiva, proclive al cambio y a la mejora continua tanto personal como profesionalmente.</p>
                     <img id="firma" src="imagenes/firma.png">
                 </div>
             </section> 
-            <a name="skills"></a>        
+            <a name="skills"></a> 
+<!------------      
             <seccion class="skills">
+                <H1>SKILLS</H1>
+                <div class="carrusel">
+                    <div class="carrusel-contenedor">
+                        <button aria-label:"Anterior" class="carrusel-anterior"><i class="fa-solid fa-angle-left"></i></button>
+                        <div class="carrusel-lista">
+                            <div class="carrusel-items1">
+                                <img src="imagenes/skills/css3yhtml5.png" alt="logo css3yhtml5">
+                                <a class="skillscert"href="#certificados"   onclick= "activarDiploma('certhtmlcss');">Certificados</a>
+                            </div>
+                            <div class="carrusel-items2">
+                                
+                                <img src="imagenes/skills/gitgithub.png" alt="logo git github">
+                                <a class="skillscert" href ="#certificados"   onclick= "activarDiploma('certgitgithab');">Certificados</a>
+                            </div>
+                            <div class="carrusel-items3">
+                                
+                                <img src="imagenes/skills/javascript.png" alt="logo javascript" id="js">
+                                <a class="skillscert" href ="#certificados"  onclick= "activarDiploma('certjs');">Certificados</a>
+                            </div>
+                            <div class="carrusel-items4">
+                                
+                                <img src="imagenes/skills/softskills.jpg" alt="logo habilidades">
+                                <a class="skillscert" href="#certificados"  onclick= "activarDiploma('certhabilidades');">Certificados</a>
+                            </div>
+
+
+
+
+
+                            <button aria-label:"Siguiente" class="carrusel-anterior"><i class="fa-solid fa-angle-right"></i></button>
+                        
+
+                        </div>
+                    </div>
+                    <div role="tablist" class="carrusel-indicadores">
+
+                    </div>
+
+
+                </div>
                  
-                <ul class="capacitacion">
-                    <H1>SKILLS</H1>
-                    <li>
-                        <h2>HTML5 y CSS 3</h2>
-                        <img src="imagenes/skills/css3yhtml5.png" alt="logo css3yhtml5">
-        
-                        <a class="skillscert"href="#certificados"   onclick= "activarDiploma('certhtmlcss');">Certificados</a>
-                        
-        
-                    </li>
-                    <li>
-                        <h2> GIT Y GITHUB</h2>
-                        <img src="imagenes/skills/gitgithub.png" alt="logo git github">
-                        <a class="skillscert" href ="#certificados"   onclick= "activarDiploma('certgitgithab');">Certificados</a>
-                        
-                    </li>
-                    <li>
-                        <h2>JAVASCRIPT</h2>
-                        <img src="imagenes/skills/javascript.png" alt="logo javascript" id="js">
-                        <a class="skillscert" href ="#certificados"  onclick= "activarDiploma('certjs');">Certificados</a>
-                        
-                    </li>
-                    <li>
-                        <h2>SOFTSKILLS</h2>
-                        <img src="imagenes/skills/softskills.jpg" alt="logo habilidades">
-                        <a class="skillscert" href="#certificados"  onclick= "activarDiploma('certhabilidades');">Certificados</a>
-                        
-                    </li>
+                
         
                 </ul>
                 <a name="certificados"></a>
@@ -269,10 +297,7 @@
                         <legend>¿Cómo le gustaría que lo contacte?</legend>
                         <label for="radio-email"><input type="radio" name ="contacto" value="email" id="radio-email">Email</label>
 
-                        
-
-                        <label for="radio-teledono"><input type="radio" name ="contacto" value="telefono" id="radio-telefono">Teléfono</label>
-                        
+                         
 
                         <label for="radio-whatsapp"><input type="radio" name="contacto" value="WhatsApp" id="radio-whatsapp" checked>WhatsApp</label> 
                                     
@@ -291,14 +316,14 @@
             
             
         
-            
+-->     
         </main>
         <footer>
             <p>Desarrollado por <strong>Arroyo Flavia Elizabeth</strong> </p>
             <p>2022</p>
 
         </footer>  
-        
-        
+       
+        <script defer src="visualizacion.js"></script>
     </body>
 </html>

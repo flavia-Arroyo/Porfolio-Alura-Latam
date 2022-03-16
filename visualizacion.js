@@ -1,5 +1,4 @@
 
-
 let diplomaActivo = "";
 function activarDiploma(name){
     if(diplomaActivo != ""){ 
@@ -12,9 +11,20 @@ function activarDiploma(name){
 }
 
 
-const menuOpciones = document.querySelectorAll('.menu nav li a');
+const menu = document.querySelector('.ham');
+const enlaces = document.querySelector('.enlaces-menu');
+menu.addEventListener('click', () => {
+    enlaces.classList.toggle('activado');
+});
+
+
+const menuOpciones = document.querySelectorAll('.enlaces-menu li a');
 const elCheck = document.getElementById('check-menu');
 menuOpciones.forEach((m) => {
     m.addEventListener('click', () => elCheck.checked = false);
 });
+
+
+
+
 
