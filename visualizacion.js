@@ -17,13 +17,13 @@ menu.addEventListener('click', () => {
     enlaces.classList.toggle('activado');
 });
 
-/*
-const menuOpciones = document.querySelectorAll('.enlaces-menu li a');
-const elCheck = document.getElementById('check-menu');
-menuOpciones.forEach((m) => {
-    m.addEventListener('click', () => elCheck.checked = false);
-});
-*/
+
+const menuOpciones = enlaces.querySelectorAll('li a');
+
+menuOpciones.forEach((li) => {
+    li.addEventListener('click', ()=>
+        enlaces.classList.remove('activado'));
+})
 
 
 

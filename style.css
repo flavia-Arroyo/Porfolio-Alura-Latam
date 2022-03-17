@@ -96,10 +96,13 @@ nav {
 
 .ham{
     display: none;
-    cursor: poiter;
+    cursor: pointer;
     border:none;
     margin:0;
+    padding: 0;
+    top:15px;
     background-color: transparent;
+    
 }
 .ham span{
     display: block;
@@ -557,10 +560,13 @@ footer{
     .enlaces-menu li:hover{
         transform: scale(1);
     }
+    .enlaces-menu.desactivado{
+        display: none;
+    }
    
 
 
-    .enlaces-menu .activado{
+    .enlaces-menu.activado{
         display: flex;
         
     }
