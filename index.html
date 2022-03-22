@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">   
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
         
         <link rel="stylesheet" href ="style.css">
@@ -15,25 +15,31 @@
         
         <header>
                 <nav >
-                    <a href="#">
-                        <h3>
-                        <img class="logo" src="imagenes/foto-perfil.jpg" alt = "foto">Arroyo Flavia</h3>
-                    </a>
-                    <ul class="enlaces-menu">
-                        <li class="menu-items"><a href="#home"><i class="fa-solid fa-house"></i></a></li>
-                        <li><a href ="#sobremi">Sobre Mi</a></li>
-                        <li><a href ="#skills">Skills</a></li>
-                        <li><a href ="#hobbies">Hobbies</a></li>
-                        <li><a href ="#formacion">Formación</a></li>
-                        <li><a href ="#proyectos">Proyectos</a></li>
-                        <li><a href ="#contacto">Contacto</a></li>     
+                    <div class="logo">
+                        <img src="imagenes/foto-perfil.jpg" alt = "foto"><h3>Arroyo Flavia</h3>
                         
-                    </ul>
-                    <button class="ham" id="check-menu" type="button">
-                        <span class="br-1"></span>
-                        <span class="br-1"></span>
-                        <span class="br-1"></span>
-                    </button>
+                    </div>
+                    <div class="enlaces-menu">
+                        
+                            <ul class="links">
+                                <li><a href="#home"><i class="fa-solid fa-house"></i></a></li>
+                                <li><a href ="#sobremi">Sobre Mi</a></li>
+                                <li><a href ="#skills">Skills</a></li>
+                                <li><a href ="#hobbies">Hobbies</a></li>
+                                <li><a href ="#formacion">Formación</a></li>
+                                <li><a href ="#proyectos">Proyectos</a></li>
+                                <li><a href ="#contacto">Contacto</a></li>     
+                                
+                            </ul>
+                        
+                        <div class="ham" >
+                            <button id="check-menu" type="button">
+                                <span class="br-1"></span>
+                                <span class="br-1"></span>
+                                <span class="br-1"></span>
+                            </button>
+                        </div>
+                    </div>
                     
                 </nav>    
                 
@@ -46,212 +52,336 @@
         <a name="home"></a>
         <main>
             
-            <section class="sobremi">
+            <section class="home">
                 <div class="portada">
-                    
-                    <img class= "fotoperfil" src="imagenes/foto-perfil.jpg">
+                    <div class= "fotoperfil">
+                        <img  src="imagenes/foto-perfil.jpg">
+                    </div>
                     <div  class="descperfil">
-                        <p>Soy<strong> Arroyo Flavia Elizabeth</strong>de nacionalidad Argentina, vivo en Córdoba Capital, tengo 40 años, soy Contadora Pública y Magister en Recursos Humanos. En la actualidad estoy formádome en el desarrollo de paginas web, participando del proyecto Oracle ONE en Alura Latam y Argentina Programa</p>
+                        <p>Soy<strong> Arroyo Flavia Elizabeth</strong> de nacionalidad Argentina, vivo en Córdoba Capital, tengo 40 años, soy Contadora Pública y Magister en Recursos Humanos. En la actualidad estoy formádome en el desarrollo de paginas web, participando del proyecto Oracle ONE en Alura Latam y Argentina Programa</p>
                     </div>
-                    <div class="redes">
-                        <a href="http://wa.me/+5493516745305"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href=" https://www.linkedin.com/in/flavia-arroyo-b5306016b"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href = "mailto:flavia.e.arroyo@gmail.com?"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="https://github.com/flavia-Arroyo"><i class="fa-brands fa-github"></i></a>
-                        <a href="Curriculum/Curriculum Arroyo FLavia.pdf"><i class="fa-solid fa-file-pdf"></i></a>
-                                            
-                    </div>
-
                 </div>
+                <div class="redes">
+                    <a href="http://wa.me/+5493516745305"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=" https://www.linkedin.com/in/flavia-arroyo-b5306016b"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href = "mailto:flavia.e.arroyo@gmail.com?"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/flavia-Arroyo"><i class="fa-brands fa-github"></i></a>
+                    <a href="Curriculum/Curriculum Arroyo FLavia.pdf"><i class="fa-solid fa-file-pdf"></i></a>
+                                        
+                </div>
+
+                
             </section>
-                <a name="sobremi"></a>               
+            <a name="sobremi" id="sobremi"></a>               
             <section class = "descripcion" >
-                    
-                    <h1>SOBRE MI</h1>
+                
+                <h1>SOBRE MI</h1>
+                <div id="texto">
                     <p>Cuento con 10 años de experiencia en Contabilidad y Recursos Humanos, trabajando en la Universidad Nacional de Córdoba. <br>En la actualidad estoy incursionando en el desarrollo de paginas web y aspiro a ser una excelente profesional aplicando todos mis conocimientos previos para lograr generar valor agregado a mis proyectos. <br>Me gusta trabajar en equipo, fomento el trabajo colaborativo, soy comunicativa, persistente en lograr mis objetivos, atenta al detalle, proactiva, proclive al cambio y a la mejora continua tanto personal como profesionalmente.</p>
-                    <img id="firma" src="imagenes/firma.png">
+                </div>
+                 <div id="firma">
+                    <img  src="imagenes/firma.png">
                 </div>
             </section> 
             <a name="skills"></a> 
-<!------------      
+     
             <seccion class="skills">
-                <H1>SKILLS</H1>
-                <div class="carrusel">
-                    <div class="carrusel-contenedor">
-                        <button aria-label:"Anterior" class="carrusel-anterior"><i class="fa-solid fa-angle-left"></i></button>
-                        <div class="carrusel-lista">
-                            <div class="carrusel-items1">
-                                <img src="imagenes/skills/css3yhtml5.png" alt="logo css3yhtml5">
-                                <a class="skillscert"href="#certificados"   onclick= "activarDiploma('certhtmlcss');">Certificados</a>
-                            </div>
-                            <div class="carrusel-items2">
-                                
-                                <img src="imagenes/skills/gitgithub.png" alt="logo git github">
-                                <a class="skillscert" href ="#certificados"   onclick= "activarDiploma('certgitgithab');">Certificados</a>
-                            </div>
-                            <div class="carrusel-items3">
-                                
-                                <img src="imagenes/skills/javascript.png" alt="logo javascript" id="js">
-                                <a class="skillscert" href ="#certificados"  onclick= "activarDiploma('certjs');">Certificados</a>
-                            </div>
-                            <div class="carrusel-items4">
-                                
-                                <img src="imagenes/skills/softskills.jpg" alt="logo habilidades">
-                                <a class="skillscert" href="#certificados"  onclick= "activarDiploma('certhabilidades');">Certificados</a>
-                            </div>
-
-
-
-
-
-                            <button aria-label:"Siguiente" class="carrusel-anterior"><i class="fa-solid fa-angle-right"></i></button>
-                        
+                <H1>SKILLS</H1>                              
+                <div class="content-all">
+                    
+                    <div class="content-img" id="img1">
+                        <a href="#img5"class="icon-left-open"><i class="fa-solid fa-angle-left"></i></a>
+                        <img src="imagenes/skills/base.jpg" alt="base">
+                        <a href="#img2" class="icon-right-open"><i class="fa-solid fa-angle-right"></i></a>
+                        <div class="content-certificados">
+                            <a href="#certificados"   onclick= "activarDiploma('certificados');">Certificados</a>
 
                         </div>
-                    </div>
-                    <div role="tablist" class="carrusel-indicadores">
 
                     </div>
+                    <div class="content-img" id="img2">
+                        <a href="#img1" class="icon-left-open"><i class="fa-solid fa-angle-left"></i></a>
+                        <img src="imagenes/skills/css3yhtml5.png" alt="logo css3yhtml5">
+                        <a href="#img3" class="icon-right-open"><i class="fa-solid fa-angle-right"></i></a>
+                        
+                    </div>
+                    <div class="content-img" id="img3">
+                        <a href="#img2"  class="icon-left-open"><i class="fa-solid fa-angle-left"></i></a>
+
+                        <img src="imagenes/skills/gitgithub.png" alt="logo git github">
+                        <a href="#img4" class="icon-right-open"><i class="fa-solid fa-angle-right"></i></a>
+                        
+                    </div>
+                    <div class="content-img" id="img4">
+                        <a href="#img3"  class="icon-left-open"><i class="fa-solid fa-angle-left"></i></a>
+                        <img src="imagenes/skills/javascript.png" alt="logo javascript">
+                        <a href="#img5" class="icon-right-open"><i class="fa-solid fa-angle-right"></i></a>
+                        
+                    </div>
+                    <div class="content-img" id="img5">
+                        <a href="#img4"  class="icon-left-open"><i class="fa-solid fa-angle-left"></i></a>
+                        <img src="imagenes/skills/softskills.jpg" alt="logo habilidades">
+                        <a href="#img1" class="icon-right-open"><i class="fa-solid fa-angle-right"></i></a>
+                        
+
+                    </div>
 
 
+
+                    
                 </div>
-                 
-                
-        
-                </ul>
-                <a name="certificados"></a>
-                <section class="certificados">
-                    
-                    <div id="certjs" class="displayNone"> 
-                        <img src="certificados/JavaScript/jsintroduccion.png"alt = "introduccionjs">
-                        <img src="certificados/JavaScript/logicaparte1.png" alt="logicaparte1">
-                        <img src="certificados/JavaScript/logicaparte2.png" alt ="logicaparte2">
-                        <img src="certificados/JavaScript/logicaparte3.png" alt="logicaparte3">
-                        <img src="certificados/JavaScript/javascrpt.png" alt="javascript">             
-                    
+                   
+                                
+            </seccion>   
+            <a name="certificados"></a>
+            <span class="linea"></span>
+            <section id="certificados" class="displayNone">
+                <div class="contenedor-total">
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/JavaScript/jsintroduccion.png"alt = "introduccionjs">
+                        
                     </div>
-                    
-                    <div id="certhtmlcss"class="displayNone">
-                        <img src="certificados/html y css/htmlcssparte1.png"alt="htmlcss1">
-                        <img src="certificados/html y css/htmlcssparte2.png" alt ="htmlcss2">
-                        <img src="certificados/html y css/htmlcssparte3.png"alt ="htmlcss3">
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/JavaScript/logicaparte1.png" alt="logicaparte1">
+                        
                     </div>
-                    
-                    <div id="certgitgithab" class="displayNone">
-                        <img src="certificados/Git Github/gitgithub.png" alt ="gitygithub">
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/JavaScript/logicaparte2.png" alt ="logicaparte2">
+                        
                     </div>
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/JavaScript/logicaparte3.png" alt="logicaparte3">
+                        
+                    </div>
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/JavaScript/javascrpt.png" alt="javascript"> 
+                        
+                    </div>
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/html y css/htmlcssparte1.png"alt="htmlcss1">
+                        
+                    </div>
+                    <div class="contenedor-imagen">
+            
+                            <img src="certificados/html y css/htmlcssparte2.png" alt ="htmlcss2">
+                        
+                    </div>
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/html y css/htmlcssparte3.png"alt ="htmlcss3">
+                        
+                    </div> 
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/habilidades blandas/businessagility.png" alt="businessagility">
+                        
+                    </div>
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/habilidades blandas/bussinessmodelcanvasparte1.png" alt="bussinesmc1">
+                        
+                    </div>
+                    <div class="contenedor-imagen">
                     
-                    <div id="certhabilidades" class="displayNone">
-                        <img src="certificados/habilidades blandas/businessagility.png" alt="businessagility">
-                        <img src="certificados/habilidades blandas/bussinessmodelcanvasparte1.png" alt="bussinesmc1">
-                        <img src="certificados/habilidades blandas/bussinessmodelcanvasparte2.png" alt="bussinessmc2">
-                        <img src="certificados/habilidades blandas/ciclovidaproducto.png"alt ="cicloproducto">
-                        <img src="certificados/habilidades blandas/fundamentosagilidad.png" alt="fundagilidad">
-                        <img src="certificados/habilidades blandas/gestionagilliderando el cambio.png" alt ="liderandocambio">
-                        <img src="certificados/habilidades blandas/habilidadesdeliderazgo.png" alt="habliderazgo">
-                        <img src="certificados/habilidades blandas/leanstartup.png" alt="leandstartup">
-                        <img src="certificados/habilidades blandas/organizaciongruposagiles.png" alt="orggrupos">
-                    </div>   
-                </section>
-            </seccion>
-            <a name="hobbies"></a>
-            <section class="hobbies">
-                <ul>
-                    <h1>HOBBIES</h1>
-                    <li>
-                        <h2>Ciclismo</h2>
-                        <img src= "hobbies/ciclismo.jpg" alt="ciclismo">        
-        
-                    </li>
-                    <li>
-                        <h2> Escuchar Musica</h2>
-                        <img src="hobbies/escucharmusica.png" alt ="escuchar musica">
+                            <img src="certificados/habilidades blandas/bussinessmodelcanvasparte2.png" alt="bussinessmc2">
+                        
+                    </div>
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/habilidades blandas/ciclovidaproducto.png"alt ="cicloproducto">
+                        
+                    </div>
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/habilidades blandas/fundamentosagilidad.png" alt="fundagilidad">
+                        
+                    </div>
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/habilidades blandas/gestionagilliderando el cambio.png" alt ="liderandocambio">
+                        
+                    </div>
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/habilidades blandas/habilidadesdeliderazgo.png" alt="habliderazgo">
+                        
+                    </div>
+                    <div class="contenedor-imagen">
+                        
+                            <img src="certificados/habilidades blandas/leanstartup.png" alt="leandstartup">
+                        
+                    </div>
+                    <div class="contenedor-imagen">
+                        
+                        <img src="certificados/habilidades blandas/organizaciongruposagiles.png" alt="orggrupos"> 
+                        
+                    </div>
+                    <div class="contenedor-imagen">
+                        
+                        <img src="certificados/Git Github/gitgithub.png" alt ="gitygithub">         
                         
                         
-                    </li>
-                    <li>
-                        <h2>Ver Peliculas</h2>
-                        <img src="hobbies/peliculas.jpg" alt="logo javascript" >
+                    </div>                   
                         
-                    </li>
+                        
                     
-        
-                </ul>
+                    
+
 
             </section>
+                
+                
+            
+         
+            <a name="hobbies"></a>
+
+            <section class="hobbies">
+                <h1>HOBBIES</h1>
+                <div class="slider">
+                    <ul>
+                        
+                        <li>
+                            <img src= "hobbies/ciclismo.jpg" alt="ciclismo">        
+            
+                        </li>
+                        <li>
+                            <img src="hobbies/escucharmusica.png" alt ="escuchar musica">
+                                                    
+                        </li>
+                        <li>
+                            <img src="hobbies/pelicula.png" alt="logo javascript" >
+                        </li>
+                        <li>
+                            <img src="hobbies/bailar.png" alt="bailar">
+                        </li>
+                        <li>
+                            <img src="hobbies/senderismo.png" alt="senderismo">
+                        </li>
+                        <li>
+                            <img src="hobbies/viajar.png" alt="viajar">
+                        </li>
+                        
+            
+                    </ul>
+                </div>
+
+            </section>
+        
             <a name="formacion"></a>
             <section class="capacitacion">
-                <ul class="formacademica">
-                    <H1>FORMACIÓN ACADÉMICA</H1>
-                    <li>
-                        <h2>Argentina Programa</h2>
-                        
-                        <a href="#diplomas"  onclick="activarDiploma('diplomaap');"><img src= "formacion/LOGOS/argentinaprograma.jpg" alt="argentinaprograma"></a>
-                        <p>Seprogramar - Egresado: Diciembre 2021</p> 
-                        <p>Yoprogramo-En Curso</p>    
-        
-                    </li>
-                    <li>
-                        <h2> Oracle- Alura Latam </h2>
-                        <a href="#skills" ><img src="formacion/LOGOS/aluralatam.png" alt ="aluralatam"></a>
-                        <p>Programa ONE</p>
-                        <p>Formación en Desarrollo Web- En curso</p>
-                        
-                        
-                    </li>
-                    <li>
-                        <h2>Universidad Europea del Atlantico</h2>
-                        <a href="#diplomas" onclick="activarDiploma('diplomarrhh');" ><img src="formacion/LOGOS/uea.jpg" alt="uea" ></a>
-                        <p>Magister en Recursos Humanos,Gestión del Conocimiento</p>
-                        <p>Egresada 2020</p>
-                        
-                    </li>
-                    <li class="unc">
-                        <h2>Universidad Nacional de Córdoba</h2>
-                        <a href ="diplomas" onclick="diplomacont();" ><img src="formacion/LOGOS/unc.png" alt="unc"></a>
-                        <p>Facultad de Ciencias Económicas -Contador Público- Egresado 2013</p>
-                    </li>
-                    
-        
-                </ul>
-                <a name="diplomas" class="dipacad"></a>
+                <h1>FORMACIÓN ACADÉMICA</h1>
                 
-                <section class="diplomas">
+                <div class="conteiner">
+                    <input type="radio" name="slider" id="s1" >
+                    <input type="radio" name="slider" id="s2">
+                    <input type="radio" name="slider" id="s3" checked>
+                    <input type="radio" name="slider" id="s4">
+                    <input type="radio" name="slider" id="s5">
+                
+                
+
+                
+                    <label  for="s1" id="slide1">
+                        <img src="formacion/LOGOS/aluralatam.png">
+                    </label>
+                    <label  for="s2" id="slide2">
+                        <img src="formacion/LOGOS/argentinaprograma.jpg">
+                    </label>
+                    <label  for="s3" id="slide3">
+                        <img src="formacion/LOGOS/unc.png">
+                    </label>
+                    <label  for="s4" id="slide4">
+                        <img src="formacion/LOGOS/uea.jpg">
+                    </label>
+                    <label for="s5" id="slide5">
+                        <img src="formacion/LOGOS/univ21.jpg">
+                    </label>
+                        
                     
+                </div>
+
+            
+                <div class="botonDiplomas">
+                    <a href="#diplomas"  onclick="activarDiploma('diplomas');"> Diplomas</a>
+                </div>
+
+
+            </section>
+            <a name="diplomas" class="dipacad"></a>
+                
+            <section id="diplomas" class="displayNone">
+                <div class="contenedor-total">   
                     
-                    <div id="diplomaap"class="displayNone">                   
+                    <div class="contenedor-imagen">                   
                         <img src="formacion/CERTIFICADOS/seprogramar.png">
                     </div>
-                    <div id="diplomarrhh"class="displayNone">                     
-                        <img src="formacion/CERTIFICADOS/titulo magister.jpg">
+                    <div class="contenedor-imagen">                     
+                        <img src="formacion/CERTIFICADOS/titulomagister.jpg">
                     </div>
-                    <div id="diplomacont"class="displayNone">
+                    <div class="contenedor-imagen">
+                        <img src="formacion/CERTIFICADOS/diplomatura.jpg">
                         
                     </div>
+                </div>
 
-                </section>
+            </section>
+            
+            
             </section>
             <a name="proyectos"></a>
             <section class="proyectos">
                 <h1>Experiencia Profesional</h1>
-                <div class="encriptador">                    
-                    <img src="proyectos/encriptador.png">
-                    <div class="info">
-                        <p>PRIMER CHALLENGE <br>Encriptador de texto</P>
-                        
-                        <a href ="https://flavia-arroyo.github.io/primer-challenge-alura-latam/">Pagina</a> 
-                        <a href ="https://github.com/flavia-Arroyo/primer-challenge-alura-latam">Repositorio</a>
+                <div class="contenedor-proyectos">
+                    <div class="encriptador"> 
+                        <div class="imagen-proyecto">                 
+                            <img src="proyectos/encriptador.png">
+                        </div> 
+                        <div class="info">
+                            <p>PRIMER CHALLENGE <br>Encriptador de texto</P>
+                            
+                            <a href ="https://flavia-arroyo.github.io/primer-challenge-alura-latam/">Pagina</a> 
+                            <a href ="https://github.com/flavia-Arroyo/primer-challenge-alura-latam">Repositorio</a>
 
-                    </div>                    
-                    
-                </div>
-                <div class="ahorcado">         
-                    <img src="proyectos/ahorcadoinicio.png">
-                    <div class="info">
-                        <p>SEGUNDO CHALLENGE<br>Solo Computadora<br> HTML Y JavaScript</P>
+                        </div>                    
                         
-                        <a href="https://flavia-arroyo.github.io/Juego-Ahorcado-Alura-Oracle/">Pagina</a>
-                        <a href ="https://github.com/flavia-Arroyo/Juego-Ahorcado-Alura-Oracle">Repositorio</a>
+                    </div>
+                    <div class="ahorcado"> 
+                        <div class="compuahorcado">
+                            <div class="info">
+                                <p>SEGUNDO CHALLENGE<br>Solo Computadora<br> HTML Y JavaScript</P>
+                                
+                                <a href="https://flavia-arroyo.github.io/Juego-Ahorcado-Alura-Oracle/">Pagina</a>
+                                <a href ="https://github.com/flavia-Arroyo/Juego-Ahorcado-Alura-Oracle">Repositorio</a>
+                            </div>
+                            <div class="imagen-proyecto">
+                                <img src="proyectos/ahorcadoinicio.png">
+
+                            </div> 
+                        </div>
+                        <div class="mediaAhorcado">
+                            <div class="imagen-proyecto">
+                                <img src="proyectos/ahorcadoinicio.png">
+    
+                            </div> 
+                            <div class="info">
+                                <p>SEGUNDO CHALLENGE<br>Solo Computadora<br> HTML Y JavaScript</P>
+                                
+                                <a href="https://flavia-arroyo.github.io/Juego-Ahorcado-Alura-Oracle/">Pagina</a>
+                                <a href ="https://github.com/flavia-Arroyo/Juego-Ahorcado-Alura-Oracle">Repositorio</a>
+                            </div>
+
+
+
+                            
+                        </div>       
+                        
+                        
                     </div>
                 </div>
             </section>   
@@ -259,58 +389,74 @@
             
             <a name="contacto"></a>
             <section class="formulario">
-                <img src="imagenes/contacto.png" class="imagenContacto" alt="logodecontacto">
-                <form>
+                <div class="tituloFormulario">
                     <h2>¿Quieres Contactarme?</h2>
+                    <br>
                     <p><em><strong>Completa el siguiente formulario<br> y a la brevedad me comunicaré </strong> </em> </p>
-                
 
-                    <label for ="nombreyapellido">Nombre y Apellido</label>
-                    <input type="text" id="nombreyapellido" class="input-patron" required>
+                </div>
 
-                    
-                    <label for ="correoelectronico">Correo Electronico</label>
-                    <input type="email" id="correoelectronico" class="input-patron" required placeholder="email@dominio.com">
+                <div class="formularioCompletar">
+                    <div class="form">
+                        <form>
 
-                    
-                    <label for ="telefono">Télefono</label>
-                    <input type="tel" id="telefono" class="input-patron" required placeholder="(xxx) xxxx xxxx">
-
-                    
-                    <label for ="mensaje">Mensaje</label>
-                    <textarea cols = "30" rows ="10"  id="mensaje" class="input-patron" required></textarea>
-                    
-                    <fieldset>
-                        <legend>¿Cómo le gustaría que lo contacte?</legend>
-                        <label for="radio-email"><input type="radio" name ="contacto" value="email" id="radio-email">Email</label>
-
-                         
-
-                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="WhatsApp" id="radio-whatsapp" checked>WhatsApp</label> 
-                                    
+                            <label for ="nombreyapellido">Nombre y Apellido</label>
+                            <input type="text" id="nombreyapellido" class="input-patron" required>
         
-                    </fieldset>
+                            
+                            <label for ="correoelectronico">Correo Electronico</label>
+                            <input type="email" id="correoelectronico" class="input-patron" required placeholder="email@dominio.com">
+        
+                            
+                            <label for ="telefono">Télefono</label>
+                            <input type="tel" id="telefono" class="input-patron" required placeholder="(xxx) xxxx xxxx">
+        
+                            
+                            <label for ="mensaje">Mensaje</label>
+                            <textarea cols = "30" rows ="10"  id="mensaje" class="input-patron" required></textarea>
+                            
+                            <fieldset>
+                                <legend>¿Cómo le gustaría que lo contacte?</legend>
+                                <label for="radio-email"><input type="radio" name ="contacto" value="email" id="radio-email">Email</label>
+        
+                                
+        
+                                <label for="radio-whatsapp"><input type="radio" name="contacto" value="WhatsApp" id="radio-whatsapp" checked>WhatsApp</label> 
+                                            
                 
+                            </fieldset>
+                        
+        
+                            <input type="submit" value ="Enviar Formulario" class="contacto">
+                        
+        
+                        </form>
+                    </div>
+                    <div class="imagenContacto">
+                        <img src="imagenes/contacto.png" alt="logodecontacto">
+                    </div>
 
-                    <input type="submit" value ="Enviar Formulario" class="contacto">
+                </div>
                 
-
-                </form>
+                
+                
             
 
             </section>
-
             
             
-        
--->     
+            
+         
+   
         </main>
+    
         <footer>
             <p>Desarrollado por <strong>Arroyo Flavia Elizabeth</strong> </p>
             <p>2022</p>
 
         </footer>  
-       
+        
+        
         <script defer src="visualizacion.js"></script>
     </body>
 </html>
