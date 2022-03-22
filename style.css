@@ -97,8 +97,7 @@ header{
                 }
 
                     
-                .links li:hover,
-                .links li.activo{
+                .links li:hover{
                     
                     background: #54c2e4;
                     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
@@ -627,10 +626,23 @@ h1{
 
 
     .input-patron{
+        border:transparent;
         display:block;
         margin:0 0 20px;
         padding: 10px 25px;
         width: 90%;
+        height: 56px;
+    }
+    
+
+    .input-patron::placeholder{
+        color:#1f41b1;
+    }
+    .texto-area{
+        border:transparent;
+        margin:10px 0px;
+        height: 96px;
+        width: 100%;
     }
 
 
@@ -683,8 +695,27 @@ footer{
 
 
 /*_____________responsivo_____*/
-
+@media screen and (max-width:380px){
+    .descperfil{
+        width: 100%;
+    }
+    
+    .descperfil p{
+        
+        font-weight: 300;
+    }
+    #texto{
+        font-weight: 400;
+    }
+    
+    .contenedor-proyectos{
+        margin:0;
+        padding:0;
+    }
+}
 @media screen and (max-width:600px){
+    
+    
     .portada{
         flex-direction: column;
     }
@@ -780,6 +811,7 @@ footer{
 
             .links.activado{
                 display: block;
+                overflow-y:scroll;
                 
             }
         .ham{
