@@ -254,7 +254,7 @@ h1{
 
 
 .content-all{
-    width: 300px;
+    width: 500px;
     height: 300px;
     position: relative;
     display: flex;
@@ -364,8 +364,8 @@ h1{
 /*_____________hobbies--------------------*/
 
 .slider{
-    width: 30%;
-    height: 15%;
+    width: 60%;
+    
     margin: auto;
     overflow: hidden;
 }
@@ -535,6 +535,7 @@ h1{
     align-content: center;
     margin:20px;
     margin: 30px;
+    
 }
 
     .encriptador, .ahorcado{
@@ -546,6 +547,11 @@ h1{
             width: 50%;
             padding: 20px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+           
         }
 
             .imagen-proyecto img{
@@ -559,7 +565,7 @@ h1{
 
             }
                 .info a{
-                    display: flex;
+                    
                     padding:10px;
                     background-color: #ec7d52;
                     font-size: 20px;
@@ -690,6 +696,26 @@ footer{
         top:0px;
         right:0px;
     }
+
+    .content-all{
+        width: 300px;
+    }
+    .slider{
+        width: 100%;
+    }
+
+    .info a{
+        width: 100%;
+    }
+    .imagenContacto{
+        display: none;
+    }
+    .formularioCompletar{
+        padding: 20px;
+    }
+    .contacto{
+        width: 100%;
+    }
     
     
 
@@ -719,6 +745,15 @@ footer{
             .enlaces-menu li a{
                 width: 100%;
             }
+
+    .descperfil p{
+        font-size: 150%;
+    }
+
+    #texto{
+        font-size: 150%;
+        width: 100%;
+    }
             
             
         .links{
@@ -736,7 +771,7 @@ footer{
                 .links  li{
                     margin: 5px 7px;
                     padding: 10px;
-                    font-size: 100%;
+                    font-size: 140%;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
@@ -759,6 +794,11 @@ footer{
         .galeria-contenedor{
             grid-template-columns: repeat(3,1fr);
         }
+
+
+.slider{
+    width: 80%;
+}
     
     /*---------------PROYECTOS------*/
     .mediaAhorcado{
@@ -777,25 +817,13 @@ footer{
     }
         
 
-            .imagen-proyecto img{
+            .imagen-proyecto, .info{
                 width: 80vw;
-                overflow: hidden;
+               
             }
-            .info{
-                width: 80vw;
-            }
-            .info p{
-                font-size: 30px;
-                font-weight: 500;
-                text-align: center;
-
-            }
-                .info a{
-                    
-                    font-size: 20px;
-                    width: 100%;
-                    
-                }
+            
+            
+                
 
 
     
