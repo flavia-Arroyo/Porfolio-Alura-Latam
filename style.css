@@ -9,6 +9,7 @@
 
 main{
     background: radial-gradient(#e9e5e5 40%, rgba(155, 211, 233, 0.933) ,#dde7e7, rgb(96, 238, 248));
+    padding: 40px;
 }
 
 
@@ -197,7 +198,7 @@ h1{
     }
 
         .descperfil p{
-            font-size: 120%;
+            font-size: 190%;
             font-weight: 700;
             line-height: 1.5em;
             text-align: justify;
@@ -222,9 +223,14 @@ h1{
         
     }
 
+
+
 #texto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
     padding: 20px;
-    font-size: 120%;
+    font-size: 190%;
     font-weight: 700;
     line-height: 1.5em;
     text-align: justify;
@@ -517,6 +523,7 @@ h1{
 /*---------------PROYECTOS------*/
 .compuahorcado{
     display: flex;
+    width: 100%;
 }
 .mediaAhorcado{
     display:none;
@@ -538,6 +545,7 @@ h1{
         .info, .imagen-proyecto{
             width: 50%;
             padding: 20px;
+            text-align: center;
         }
 
             .imagen-proyecto img{
@@ -552,16 +560,12 @@ h1{
             }
                 .info a{
                     display: flex;
-                    justify-content: center;
-                    align-content: center;
-                    flex-direction: column;
                     padding:10px;
                     background-color: #ec7d52;
                     font-size: 20px;
                     font-weight: 700;
                     margin:20px;
                     border-radius: 30px;
-                    text-align: center;
                     width: 30%;
                 }
 
