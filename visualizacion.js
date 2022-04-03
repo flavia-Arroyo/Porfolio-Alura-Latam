@@ -33,11 +33,17 @@ function activarDiploma(name){
 }
 
 
-function validarMensaje(){
-    if(document.form.mensaje.length > 50){
-        alert('Debe contener maximo 50 caracteres');
-        document.form.mensaje.focus();
+function validarMensaje(e){
+    e.preventDefault();
+    const form= document.getElementById('form')
+     
+    
+    if(form.mensaje.value.length >50){
+        alert('Debe tener como maximo 50 caracteres el mensaje')
+        form.mensaje.focus()
     }
+    
+   
 
 }
 
